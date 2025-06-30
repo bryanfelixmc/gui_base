@@ -30,8 +30,7 @@ class Ventana1(QDialog):
         super(Ventana1, self).__init__()
         loadUi("ventana1.ui", self)
         self.info = info  # Store the information instance
-        self.pushButton1.clicked.connect(self.go_to_ventana2)  # Connect the button to the method
-
+        self.next_button.clicked.connect(self.go_to_ventana2)  # Connect the button to the method
     def go_to_ventana2(self):
         window_manager.show_window(Ventana2)  # Use the window manager to show Ventana2
 
@@ -40,10 +39,9 @@ class Ventana2(QDialog):
         super(Ventana2, self).__init__()
         loadUi("ventana2.ui", self)
         self.info = info  # Store the information instance
-        self.pushButton1.clicked.connect(self.ir_ventana1)  # Connect the back button to the method
-        self.pushButton2.clicked.connect(self.ir_ventana3)  # Connect the next button to a new method
-        self.pushButton3.clicked.connect(self.guardar)  # Connect the save button to the method
-        self.lineEdit.setText(self.info.get_data())  # Set the text in the line edit
+        self.prev_button.clicked.connect(self.ir_ventana1)  # Connect the back button to the method
+        self.next_button.clicked.connect(self.ir_ventana3)  # Connect the next button to a new method
+
 
     def ir_ventana1(self):
         window_manager.show_window(Ventana1)  # Use the window manager to show Ventana1
@@ -51,23 +49,54 @@ class Ventana2(QDialog):
     def ir_ventana3(self):
         window_manager.show_window(Ventana3)  # Use the window manager to show Ventana1
 
+class Ventana2_1(QDialog):
+    def __init__(self, info):
+        super(Ventana2_1, self).__init__()
+        loadUi("ventana2.ui", self)
+        self.info = info  # Store the information instance
+        self.prev_button.clicked.connect(self.ir_ventana1)  # Connect the back button to the method
+        self.next_button.clicked.connect(self.ir_ventana3)  # Connect the next button to a new method
 
-    def guardar(self):
-        # Save the data from the line edit to the information instance
-        self.info.set_data(self.lineEdit.text())
-        print(f"Data saved: {self.info.get_data()}")  # Optional: Print the saved data
+
+    def ir_ventana1(self):
+        window_manager.show_window(Ventana1)  # Use the window manager to show Ventana1
+
+    def ir_ventana3(self):
+        window_manager.show_window(Ventana3)  # Use the window manager to show Ventana1
 
 class Ventana3(QDialog):
     def __init__(self, info):
         super(Ventana3, self).__init__()
         loadUi("ventana3.ui", self)
         self.info = info  # Store the information instance
-        self.pushButton1.clicked.connect(self.ir_ventana2)  # Connect the back button to the method
+        self.prev_button.clicked.connect(self.ir_ventana2)  # Connect the back button to the method
+        self.next_button.clicked.connect(self.ir_ventana4)  # Connect the next button to a new method
         self.pushButton3.clicked.connect(self.guardar)  # Connect the save button to the method
-        self.lineEdit2.setText(self.info.get_data())  # Set the text in the line edit
+        self.lineEdit.setText(self.info.get_data())  # Set the text in the line edit
 
     def ir_ventana2(self):
         window_manager.show_window(Ventana2)  # Use the window manager to show Ventana1
+
+    def ir_ventana4(self):
+        window_manager.show_window(Ventana4)  # Use the window manager to show Ventana1
+
+
+    def guardar(self):
+        # Save the data from the line edit to the information instance
+        self.info.set_data(self.lineEdit.text())
+        print(f"Data saved: {self.info.get_data()}")  # Optional: Print the saved data
+
+class Ventana4(QDialog):
+    def __init__(self, info):
+        super(Ventana4, self).__init__()
+        loadUi("ventana4.ui", self)
+        self.info = info  # Store the information instance
+        self.prev_button.clicked.connect(self.ir_ventana3)  # Connect the back button to the method
+        self.pushButton3.clicked.connect(self.guardar)  # Connect the save button to the method
+        self.lineEdit2.setText(self.info.get_data())  # Set the text in the line edit
+
+    def ir_ventana3(self):
+        window_manager.show_window(Ventana3)  # Use the window manager to show Ventana1
 
     def guardar(self):
         # Save the data from the line edit to the information instance
