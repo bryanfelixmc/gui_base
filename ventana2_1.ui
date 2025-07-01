@@ -30,19 +30,6 @@ background-color: rgb(255,255, 255);</string>
     <string>Atras</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="next_button">
-   <property name="geometry">
-    <rect>
-     <x>230</x>
-     <y>690</y>
-     <width>75</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Siguiente</string>
-   </property>
-  </widget>
   <widget class="QLabel" name="label_8">
    <property name="geometry">
     <rect>
@@ -68,17 +55,17 @@ background-color: rgb(255,255, 255);</string>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>100</x>
-     <y>80</y>
-     <width>201</width>
-     <height>531</height>
+     <x>130</x>
+     <y>110</y>
+     <width>131</width>
+     <height>511</height>
     </rect>
    </property>
    <property name="text">
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>auxiliares/5114217297257541425.jpg</pixmap>
+    <pixmap>images/bahia_de_linea.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -90,11 +77,11 @@ background-color: rgb(255,255, 255);</string>
     <bool>false</bool>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="pushButton_LL">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>150</y>
+     <x>80</x>
+     <y>100</y>
      <width>41</width>
      <height>31</height>
     </rect>
@@ -109,11 +96,11 @@ background-color: rgb(255,255, 255);</string>
     <string>LL</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
+  <widget class="QPushButton" name="pushButton_PR">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>180</y>
+     <x>80</x>
+     <y>140</y>
      <width>41</width>
      <height>31</height>
     </rect>
@@ -128,11 +115,11 @@ background-color: rgb(255,255, 255);</string>
     <string>PR</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_3">
+  <widget class="QPushButton" name="pushButton_TT">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>230</y>
+     <x>80</x>
+     <y>200</y>
      <width>41</width>
      <height>31</height>
     </rect>
@@ -147,11 +134,11 @@ background-color: rgb(255,255, 255);</string>
     <string>TT</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_4">
+  <widget class="QPushButton" name="pushButton_TO">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>270</y>
+     <x>80</x>
+     <y>260</y>
      <width>41</width>
      <height>31</height>
     </rect>
@@ -166,10 +153,10 @@ background-color: rgb(255,255, 255);</string>
     <string>TO</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_5">
+  <widget class="QPushButton" name="pushButton_SL">
    <property name="geometry">
     <rect>
-     <x>50</x>
+     <x>80</x>
      <y>320</y>
      <width>41</width>
      <height>31</height>
@@ -185,11 +172,11 @@ background-color: rgb(255,255, 255);</string>
     <string>SL</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_6">
+  <widget class="QPushButton" name="pushButton_TC">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>390</y>
+     <x>80</x>
+     <y>410</y>
      <width>41</width>
      <height>31</height>
     </rect>
@@ -204,11 +191,11 @@ background-color: rgb(255,255, 255);</string>
     <string>TC</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_7">
+  <widget class="QPushButton" name="pushButton_IN">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>450</y>
+     <x>80</x>
+     <y>480</y>
      <width>41</width>
      <height>31</height>
     </rect>
@@ -223,11 +210,11 @@ background-color: rgb(255,255, 255);</string>
     <string>IN</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_8">
+  <widget class="QPushButton" name="pushButton_SB">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>510</y>
+     <x>80</x>
+     <y>540</y>
      <width>41</width>
      <height>31</height>
     </rect>
@@ -242,11 +229,11 @@ background-color: rgb(255,255, 255);</string>
     <string>SB</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_9">
+  <widget class="QPushButton" name="pushButton_BB">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>570</y>
+     <x>80</x>
+     <y>590</y>
      <width>41</width>
      <height>31</height>
     </rect>
